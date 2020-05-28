@@ -15,11 +15,11 @@
         crossorigin=""></script>
 
         <style>
-            #damascusMap { 
+            #damascusMap {
                 position: absolute;
                 top: 0;
-                bottom: 0;
                 left: 0;
+                bottom: 0;
                 right: 0;
                 width: 100%;
             }
@@ -30,14 +30,21 @@
     <body>
         <div id="damascusMap"></div>
         <script>
+            var bounds = [[0,0], [2303,4096]];
             var map = L.map('damascusMap', {
                 crs: L.CRS.Simple,
-                minZoom: -1.5
+                minZoom: -1.2,
+                maxZoom: 2,
+                zoomSnap: 0,
+                maxBounds: bounds,
+                maxBoundsViscosity: 1.0 
             });
-            var bounds = [[0,0], [2444,4096]];
             var image = L.imageOverlay('Damascus1.png', bounds).addTo(map);
-
             map.fitBounds(bounds);
+
+            // var sol = L.latLng([ 2444, 4096 ]);
+            // L.marker(sol).addTo(map);
+            // map.setView( [70, 120], 1);
         </script>
     </body>
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        
+        <!-- Leaflet CSS Header -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+
+        <!-- Leaflet Javascript -->
+        <!-- Needs to be AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+        <style>
+            #damascusMap { 
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+        </style>
+
+        <title>Assassin's Creed - Damascus Map</title>
+    </head>
+    <body>
+        <div id="damascusMap"></div>
+        <script>
+            var map = L.map('damascusMap', {
+                crs: L.CRS.Simple,
+                minZoom: -1.5
+            });
+            var bounds = [[0,0], [2444,4096]];
+            var image = L.imageOverlay('Damascus1.png', bounds).addTo(map);
+
+            map.fitBounds(bounds);
+        </script>
+    </body>
+</html>

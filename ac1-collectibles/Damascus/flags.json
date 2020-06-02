@@ -59,6 +59,111 @@
             "x" : "2623",
             "y" : "1805",
             "note" : "On a wooden roof connecting the roofs of two buildings."
+        },
+        {
+            "x" : "2308",
+            "y" : "1768",
+            "note" : "On a short porch on the side of a building, near ground level."
+        },
+        {
+            "x" : "2129",
+            "y" : "1643",
+            "note" : "On the ground, in a small alley."
+        },
+        {
+            "x" : "1961",
+            "y" : "1661",
+            "note" : "On the corner of the roof of the building with a large dome, in plain view."
+        },
+        {
+            "x" : "2014",
+            "y" : "1526",
+            "note" : "On the roof of the small, triangular building, in plain view."
+        },
+        {
+            "x" : "1980",
+            "y" : "1344",
+            "note" : "Down a tiny alley with a bench that is easy to miss, under a wooden roof."
+        },
+        {
+            "x" : "2117",
+            "y" : "1131",
+            "note" : "At ground level, right next to a building, to the left of the haystack."
+        },
+        {
+            "x" : "2222",
+            "y" : "1176",
+            "note" : "Down a small alley."
+        },
+        {
+            "x" : "2361",
+            "y" : "1184",
+            "note" : "On a small wooden overhang on the side of a building, near ground level."
+        },
+        {
+            "x" : "2444",
+            "y" : "1352",
+            "note" : "At ground level, near the wall of a building."
+        },
+        {
+            "x" : "2268",
+            "y" : "1467",
+            "note" : "On a wooden roof one story up, under a wooden overhang."
+        },
+        {
+            "x" : "2352",
+            "y" : "1500",
+            "note" : "At ground level, in a small alley."
+        },
+        {
+            "x" : "2452",
+            "y" : "1487",
+            "note" : "At ground level, in a small garden with no entrances; you must jump over a short wall to get into it."
+        },
+        {
+            "x" : "2626",
+            "y" : "1306",
+            "note" : "At ground level, in a small alley."
+        },
+        {
+            "x" : "2835",
+            "y" : "1094",
+            "note" : "On a wooden overhang on the wall of a building."
+        },
+        {
+            "x" : "2993",
+            "y" : "1234",
+            "note" : "In plain view, on a short wall in the middle of a short set of stairs."
+        },
+        {
+            "x" : "3071",
+            "y" : "1494",
+            "note" : "In a section of the roof closed off by the long, dome-shaped divider."
+        },
+        {
+            "x" : "3179",
+            "y" : "1400",
+            "note" : "At the end of a small alley, at the bottom of a ladder."
+        },
+        {
+            "x" : "3456",
+            "y" : "1373",
+            "note" : "On the roof of a building, next to the large dome, in plain view."
+        },
+        {
+            "x" : "3500",
+            "y" : "1238",
+            "note" : "On a small, ground level porch."
+        },
+        {
+            "x" : "3370",
+            "y" : "1196",
+            "note" : "Ground level, down a small, twisting alley between two buildings."
+        },
+        {
+            "x" : "3160",
+            "y" : "1080",
+            "note" : "On a wooden roof one story up, surrounded by 3 two-story buildings."
         }
     ]
 }

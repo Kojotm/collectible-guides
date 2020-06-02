@@ -164,6 +164,176 @@
             "x" : "3160",
             "y" : "1080",
             "note" : "On a wooden roof one story up, surrounded by 3 two-story buildings."
+        },
+        {
+            "x" : "1883",
+            "y" : "776",
+            "note" : "Ground level, in a small courtyard, under a curved stone roof."
+        },
+        {
+            "x" : "1954",
+            "y" : "534",
+            "note" : "On a wooden overhang."
+        },
+        {
+            "x" : "2071",
+            "y" : "555",
+            "note" : "On the roof, in plain sight, next to one orange safe place."
+        },
+        {
+            "x" : "2029",
+            "y" : "649",
+            "note" : "Ground level, in a small courtyard."
+        },
+        {
+            "x" : "2070",
+            "y" : "840",
+            "note" : "In between a one and two story buildings, in bottom of a ladder."
+        },
+        {
+            "x" : "2174",
+            "y" : "831",
+            "note" : "On the roof, next to some crates, in plain sight."
+        },
+        {
+            "x" : "2326",
+            "y" : "750",
+            "note" : "Ground level, in a small courtyard."
+        },
+        {
+            "x" : "2266",
+            "y" : "949",
+            "note" : "Above the plaza, on a hanging wooden platform."
+        },
+        {
+            "x" : "2382",
+            "y" : "897",
+            "note" : "Ground level, in a short alley, next to a tree."
+        },
+        {
+            "x" : "2455",
+            "y" : "844",
+            "note" : "In a narrow alley, next to/behind a stone wall, depends on which side you approach it."
+        },
+        {
+            "x" : "2471",
+            "y" : "928",
+            "note" : "On a small one story roof, next to a ladder."
+        },
+        {
+            "x" : "2600",
+            "y" : "890",
+            "note" : "On a wooden balcony resembling structure in the side of the large building."
+        },
+        {
+            "x" : "2550",
+            "y" : "780",
+            "note" : "This is inside the large building that has a courtyard inside, in one of the corners of the walkway on ground level."
+        },
+        {
+            "x" : "2691",
+            "y" : "935",
+            "note" : "In between a one and a two story building, at the bottom of a ladder. There is a wooden overhang above it."
+        },
+        {
+            "x" : "2818",
+            "y" : "911",
+            "note" : "In a short alley, next to a tree, a door and a ladder."
+        },
+        {
+            "x" : "2921",
+            "y" : "776",
+            "note" : "On the rooftop, in middle of three domes."
+        },
+        {
+            "x" : "3082",
+            "y" : "749",
+            "note" : "In a closed off area by the large temple at ground level."
+        },
+        {
+            "x" : "3111",
+            "y" : "857",
+            "note" : "On a stone overpass, next to a cage-resembling structure, with ladders on both sides."
+        },
+        {
+            "x" : "3333",
+            "y" : "958",
+            "note" : "Up high on the roof, on a wooden beam."
+        },
+        {
+            "x" : "3518",
+            "y" : "903",
+            "note" : "On a wooden overhang, behind one of the domes of the large building."
+        },
+        {
+            "x" : "3356",
+            "y" : "805",
+            "note" : "On the roof, between a small building and the city wall."
+        },
+        {
+            "x" : "3133",
+            "y" : "564",
+            "note" : "On a rooftop, in plain sight, next to the city wall."
+        },
+        {
+            "x" : "2974",
+            "y" : "644",
+            "note" : "In a narrow alley, next to/behind a stone wall, depends on which side you approach it."
+        },
+        {
+            "x" : "2815",
+            "y" : "576",
+            "note" : "On the roof, in plain sight, next to some crates."
+        },
+        {
+            "x" : "2817",
+            "y" : "761",
+            "note" : "Up high on the roof, on a wooden overhang."
+        },
+        {
+            "x" : "2736",
+            "y" : "675",
+            "note" : "In a small courtyard, behind a ladder, under a wooden overhang. The courtyard also has double wooden doors guarded by two guards."
+        },
+        {
+            "x" : "2592",
+            "y" : "558",
+            "note" : "On the roof, on top of one of those cage-looking structures."
+        },
+        {
+            "x" : "2563",
+            "y" : "434",
+            "note" : "Ground level, on top of some small stairs, in front of a door, next to a fence."
+        },
+        {
+            "x" : "2553",
+            "y" : "711",
+            "note" : "On a rooftop, between some crates and baskets."
+        },
+        {
+            "x" : "2477",
+            "y" : "606",
+            "note" : "On a small rooftop one story high, there is a wooden beam above it."
+        },
+        {
+            "x" : "2342",
+            "y" : "587",
+            "note" : "On the roof, next to some crates."
+        },
+        {
+            "x" : "2279",
+            "y" : "515",
+            "note" : "On a small roof, one story high, next to some barrels and a door."
+        },
+        {
+            "x" : "2280",
+            "y" : "431",
+            "note" : "Ground level, in front of a door, surrounded by fence."
+        },
+        {
+            "x" : "2368",
+            "y" : "490",
+            "note" : "in a small courtyard, behind a ladder, under a wooden overhang."
         }
     ]
 }

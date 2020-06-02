@@ -14,6 +14,21 @@
             "x" : "2390",
             "y" : "1282",
             "note": "In the middle of a curved alley way."
+        },
+        {
+            "x" : "1909",
+            "y" : "685",
+            "note": "In an empty backstreet."
+        },
+        {
+            "x" : "2532",
+            "y" : "964",
+            "note": "On top of a roof, in between two smaller buildings on top, and underneath a load of wooden planks."
+        },
+        {
+            "x" : "3167",
+            "y" : "885",
+            "note": "In a small courtyard."
         }
     ]
 }

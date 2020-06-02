@@ -2,8 +2,8 @@ let flagsFile;
 let templarsFile;
 
 function preload(){
-    flagsFile = loadJSON('http://localhost/ac1-collectibles/Damascus/flags.json');
-    templarsFile = loadJSON('http://localhost/ac1-collectibles/Damascus/templars.json');
+    flagsFile = loadJSON('/ac1-collectibles/Damascus/flags.json');
+    templarsFile = loadJSON('/ac1-collectibles/Damascus/templars.json');
 }
 
 function setup() { 

@@ -26,10 +26,14 @@
         </style>
 
         <title>Assassin's Creed - Damascus Map</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+
     </head>
     <body>
         <div id="damascusMap"></div>
-        <script>
+        <script src="damas_map.js""></script>
+        <!-- <script>
             var bounds = [[0,0], [2303,4096]];
             var map = L.map('damascusMap', {
                 crs: L.CRS.Simple,
@@ -39,12 +43,13 @@
                 maxBounds: bounds,
                 maxBoundsViscosity: 1.0 
             });
+
             var image = L.imageOverlay('Damascus1.png', bounds).addTo(map);
             map.fitBounds(bounds);
 
             // var sol = L.latLng([ 2444, 4096 ]);
             // L.marker(sol).addTo(map);
             // map.setView( [70, 120], 1);
-        </script>
+        </script> -->
     </body>
 </html>

@@ -1,0 +1,19 @@
+{
+    "templars" : [
+        {
+            "x" : "2024",
+            "y" : "1794",
+            "note": "In a large open area, cannot miss him."
+        },
+        {
+            "x" : "3173",
+            "y" : "1797",
+            "note": "At the end of a narrow alley, in a small open area. Next to a small building with a ladder and a wooden spear rack."
+        },
+        {
+            "x" : "2390",
+            "y" : "1282",
+            "note": "In the middle of a curved alley way."
+        }
+    ]
+}

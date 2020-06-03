@@ -333,7 +333,172 @@
         {
             "x" : "2368",
             "y" : "490",
-            "note" : "in a small courtyard, behind a ladder, under a wooden overhang."
+            "note" : "In a small courtyard, behind a ladder, under a wooden overhang."
+        },
+        {
+            "x" : "1662",
+            "y" : "1946",
+            "note" : "In the middle of a room one story up without a roof."
+        },
+        {
+            "x" : "1482",
+            "y" : "1894",
+            "note" : "In plain view, on a roof 2 stories up."
+        },
+        {
+            "x" : "1224",
+            "y" : "1731",
+            "note" : "On a wooden platform hanging over the street."
+        },
+        {
+            "x" : "1156",
+            "y" : "1462",
+            "note" : "On a wood awning overlooking the canal. You need to climb the building then drop down to the awning and you should land right on top of it."
+        },
+        {
+            "x" : "1000",
+            "y" : "1444",
+            "note" : "On a roof 2 stories up."
+        },
+        {
+            "x" : "835",
+            "y" : "1468",
+            "note" : "At the end of a small alley with two sets of stairs, right in front of a large wall."
+        },
+        {
+            "x" : "835",
+            "y" : "1663",
+            "note" : "Inside one of the hallways surrounding the large courtyard, at ground level."
+        },
+        {
+            "x" : "600",
+            "y" : "1503",
+            "note" : "High up on a wooden plank in the opening in the wall (guarded by 4 guards on the ground)."
+        },
+        {
+            "x" : "443",
+            "y" : "1544",
+            "note" : "On a low wooden overhang at the end of a small alley."
+        },
+        {
+            "x" : "500",
+            "y" : "1368",
+            "note" : "In the middle of a small, half-destroyed room a couple stories up."
+        },
+        {
+            "x" : "641",
+            "y" : "1303",
+            "note" : "In a tiny room on the side of the small room with a bench."
+        },
+        {
+            "x" : "593",
+            "y" : "1121",
+            "note" : "Ground level, near a well and a tree, next to the canal."
+        },
+        {
+            "x" : "988",
+            "y" : "1197",
+            "note" : "On a small, ground level bridge extending over the canal."
+        },
+        {
+            "x" : "1247",
+            "y" : "1247",
+            "note" : "Ground level, in a small room on the side of the street."
+        },
+        {
+            "x" : "1542",
+            "y" : "1407",
+            "note" : "Get to ground level inside the courtyard and look up to its location on the map. You should see it a couple stories up on a balcony. Climb up to its level and shimmy over to it."
+        },
+        {
+            "x" : "1561",
+            "y" : "1561",
+            "note" : "Climb up to the roof and look down into the courtyard. It’s on a pillar in the courtyard."
+        },
+        {
+            "x" : "1432",
+            "y" : "1590",
+            "note" : "On the roof, right next to the huge dome."
+        },
+        {
+            "x" : "1725",
+            "y" : "1700",
+            "note" : "Ground level, in a small alley."
+        },
+        {
+            "x" : "1763",
+            "y" : "1543",
+            "note" : "Ground level, in a small courtyard enclosed by some buildings."
+        },
+        {
+            "x" : "1610",
+            "y" : "1211",
+            "note" : "Way up on the highest tiled roof."
+        },
+        {
+            "x" : "1800",
+            "y" : "1140",
+            "note" : "In an open room one story up."
+        },
+        {
+            "x" : "1737",
+            "y" : "975",
+            "note" : "In a corner down an alley, at ground level."
+        },
+        {
+            "x" : "1497",
+            "y" : "1070",
+            "note" : "On top of the long dome-shaped divider on the roof."
+        },
+        {
+            "x" : "1124",
+            "y" : "990",
+            "note" : "Ground level, in a corner, outside the covered market."
+        },
+        {
+            "x" : "703",
+            "y" : "918",
+            "note" : "On a horizontal wooden plank above a door on the street."
+        },
+        {
+            "x" : "908",
+            "y" : "744",
+            "note" : "In an open room one story up."
+        },
+        {
+            "x" : "990",
+            "y" : "860",
+            "note" : "On one of the wooden planks above the market, inside the building."
+        },
+        {
+            "x" : "1129",
+            "y" : "879",
+            "note" : "At ground level in the covered market, in a side room."
+        },
+        {
+            "x" : "1590",
+            "y" : "808",
+            "note" : "On a roof 2 stories up."
+        },
+        {
+            "x" : "1728",
+            "y" : "808",
+            "note" : "In an open room one story up."
+        },
+        {
+            "x" : "1728",
+            "y" : "539",
+            "note" : "In a balcony in a courtyard enclosed by some buildings."
+        },
+        {
+            "x" : "1375",
+            "y" : "622",
+            "note" : "At the top of the highest roof. Inside the compound there is a wooden mesh on the east side of the building that you can use to climb up."
+        },
+        {
+            "x" : "1094",
+            "y" : "475",
+            "note" : "Ground level, on a platform in the water."
         }
     ]
 }

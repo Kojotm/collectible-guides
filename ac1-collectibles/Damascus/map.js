@@ -2,8 +2,8 @@ let flagsFile;
 let templarsFile;
 
 function preload(){
-    flagsFile = loadJSON('/ac1-collectibles/Damascus/flags.json');
-    templarsFile = loadJSON('/ac1-collectibles/Damascus/templars.json');
+    flagsFile = loadJSON('/ac1-collectibles/Damascus/json/flags.json');
+    templarsFile = loadJSON('/ac1-collectibles/Damascus/json/templars.json');
 }
 
 function setup() { 
@@ -21,7 +21,7 @@ function setup() {
     });
 
     var templarIcon = L.icon({
-        iconUrl: 'templar.png',
+        iconUrl: 'img/templar.png',
         iconSize:     [35, 35],
         iconAnchor:   [17.5, 17.5],
         popupAnchor:  [0, 0]
@@ -35,7 +35,7 @@ function setup() {
         L.marker([templar.y, templar.x], {icon: templarIcon}).bindPopup(templar.note).addTo(map);
     }
 
-    L.imageOverlay('Damascus1.png', bounds).addTo(map);
+    L.imageOverlay('img/map.png', bounds).addTo(map);
     map.fitBounds(bounds);
 } 
 

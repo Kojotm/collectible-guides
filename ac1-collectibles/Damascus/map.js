@@ -17,7 +17,7 @@ function setup() {
         maxZoom: 2,
         zoomSnap: 0,
         maxBounds: bounds,
-        maxBoundsViscosity: 1.0 
+        maxBoundsViscosity: 1.0
     });
 
     var templarIcon = L.icon({
@@ -28,11 +28,27 @@ function setup() {
     });
 
     for(let flag of flagsFile.flags){
-        L.marker([flag.y, flag.x]).bindPopup(flag.note).addTo(map);
+        var marker = L.marker([flag.y, flag.x]).bindPopup(flag.note, {closeButton: false}).addTo(map);
+
+        marker.on('mouseover', function(ev) {
+            ev.target.openPopup();
+        });
+        marker.on('mouseout', function(ev) {
+            ev.target.closePopup();
+        });
+        marker.off('click');
     }
     
     for(let templar of templarsFile.templars){
-        L.marker([templar.y, templar.x], {icon: templarIcon}).bindPopup(templar.note).addTo(map);
+        var marker = L.marker([templar.y, templar.x], {icon: templarIcon}).bindPopup(templar.note, {closeButton: false}).addTo(map);
+
+        marker.on('mouseover', function(ev) {
+            ev.target.openPopup();
+        });
+        marker.on('mouseout', function(ev) {
+            ev.target.closePopup();
+        });
+        marker.off('click');
     }
 
     L.imageOverlay('img/map.png', bounds).addTo(map);

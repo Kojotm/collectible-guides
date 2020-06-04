@@ -14,21 +14,29 @@ function setup() {
     var map = L.map('damascusMap', {
         crs: L.CRS.Simple,
         minZoom: -1.2,
-        maxZoom: 2,
+        maxZoom: 1,
         zoomSnap: 0,
         maxBounds: bounds,
         maxBoundsViscosity: 1.0
     });
 
-    var templarIcon = L.icon({
-        iconUrl: 'img/templar.png',
-        iconSize:     [35, 35],
+    var templarIcon = L.divIcon({
+        html: '<img src="img/templar.png" width=35 height=35 class="markerIcon"/>',
         iconAnchor:   [17.5, 17.5],
-        popupAnchor:  [0, 0]
+        popupAnchor:  [0, 0],
+        className: ''
+    });
+
+    var flagIcon = L.divIcon({
+        html: '<img src="img/SaracenFlag_Inactive.png" width=30 height=50 class="markerIcon"/>',
+        iconAnchor:   [15, 50],
+        popupAnchor:  [0, -50],
+        className: ''
     });
 
     for(let flag of flagsFile.flags){
-        var marker = L.marker([flag.y, flag.x]).bindPopup(flag.note, {closeButton: false}).addTo(map);
+        var marker = L.marker([flag.y, flag.x], {icon: flagIcon});
+        marker.bindPopup(flag.note, {closeButton: false})
 
         marker.on('mouseover', function(ev) {
             ev.target.openPopup();
@@ -37,6 +45,8 @@ function setup() {
             ev.target.closePopup();
         });
         marker.off('click');
+
+        marker.addTo(map);
     }
     
     for(let templar of templarsFile.templars){

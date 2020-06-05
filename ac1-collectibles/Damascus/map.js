@@ -27,7 +27,14 @@ function setup() {
         className: ''
     });
 
-    var flagIcon = L.divIcon({
+    var ActiveFlagIcon = L.divIcon({
+        html: '<img src="img/SaracenFlag_Active.png" width=30 height=50 class="markerIcon"/>',
+        iconAnchor:   [15, 50],
+        popupAnchor:  [0, -50],
+        className: ''
+    });
+
+    var InactiveFlagIcon = L.divIcon({
         html: '<img src="img/SaracenFlag_Inactive.png" width=30 height=50 class="markerIcon"/>',
         iconAnchor:   [15, 50],
         popupAnchor:  [0, -50],
@@ -35,7 +42,7 @@ function setup() {
     });
 
     for(let flag of flagsFile.flags){
-        var marker = L.marker([flag.y, flag.x], {icon: flagIcon});
+        var marker = L.marker([flag.y, flag.x], {icon: InactiveFlagIcon});
         marker.bindPopup(flag.note, {closeButton: false})
 
         marker.on('mouseover', function(ev) {
@@ -44,7 +51,10 @@ function setup() {
         marker.on('mouseout', function(ev) {
             ev.target.closePopup();
         });
-        marker.off('click');
+        marker.on('click', function(ev){
+            var layer = ev.target;
+            layer.setIcon(layer.options.icon == InactiveFlagIcon ? ActiveFlagIcon : InactiveFlagIcon);
+        });
 
         marker.addTo(map);
     }

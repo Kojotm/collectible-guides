@@ -1,0 +1,44 @@
+/* Gets rid of the triangle-tips. */
+.leaflet-tooltip-top:before,
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+    border: 0px solid transparent;
+}
+
+/* Styles the tooltip. */
+.leaflet-tooltip{
+    transition: opacity 0.2s;
+    padding: 15px;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    background-color: grey;
+    border-color: grey;
+    color: white;
+    width: 200px;
+    white-space: normal;
+}
+
+/* Makes map fullscreen. */
+#damascusMap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+/* Transfroms markers back to original when not hovered on. */
+.markerIcon{
+    transition: transform .2s;
+    transform: scale(2/3);
+    transform-origin: bottom center;                
+}
+
+/* Increases marker size upon hover. */
+.markerIcon:hover{
+    transition: transform .2s;
+    transform: scale(1.5);
+    transform-origin: bottom center;
+}

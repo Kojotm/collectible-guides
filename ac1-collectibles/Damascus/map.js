@@ -13,7 +13,7 @@ function setup() {
     
     var map = L.map('damascusMap', {
         crs: L.CRS.Simple,
-        minZoom: -1.2,
+        minZoom: -1,
         maxZoom: 1,
         zoomSnap: 0,
         maxBounds: bounds,
@@ -22,30 +22,30 @@ function setup() {
     });
 
     var ActiveTemplarIcon = L.divIcon({
-        html: '<img src="img/Templar_Active.png" width=35 height=35 class="markerIcon"/>',
-        iconAnchor:   [17.5, 17.5],
-        tooltipAnchor:  [23, -8],
+        html: '<img src="img/Templar_Active.png" width=50 height=50 class="markerIcon"/>',
+        iconAnchor:   [25, 25],
+        tooltipAnchor:  [30, -8],
         className: ''
     });
 
     var InactiveTemplarIcon = L.divIcon({
-        html: '<img src="img/Templar_Inactive.png" width=35 height=35 class="markerIcon"/>',
-        iconAnchor:   [17.5, 17.5],
-        tooltipAnchor:  [23, -8],
+        html: '<img src="img/Templar_Inactive.png" width=50 height=50 class="markerIcon"/>',
+        iconAnchor:   [25, 25],
+        tooltipAnchor:  [30, -8],
         className: ''
     });
 
     var ActiveFlagIcon = L.divIcon({
-        html: '<img src="img/SaracenFlag_Active.png" width=30 height=50 class="markerIcon"/>',
-        iconAnchor:   [15, 50],
-        tooltipAnchor:  [20, -37.5],
+        html: '<img src="img/SaracenFlag_Active.png" width=45 height=75 class="markerIcon"/>',
+        iconAnchor:   [22, 75],
+        tooltipAnchor:  [30, -60],
         className: ''
     });
 
     var InactiveFlagIcon = L.divIcon({
-        html: '<img src="img/SaracenFlag_Inactive.png" width=30 height=50 class="markerIcon"/>',
-        iconAnchor:   [15, 50],
-        tooltipAnchor:  [20, -37.5],
+        html: '<img src="img/SaracenFlag_Inactive.png" width=45 height=75 class="markerIcon"/>',
+        iconAnchor:   [22, 75],
+        tooltipAnchor:  [30, -60],
         className: ''
     });
 

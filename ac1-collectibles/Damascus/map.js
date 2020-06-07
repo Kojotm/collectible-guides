@@ -1,6 +1,29 @@
 let flagsFile;
 let templarsFile;
 
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "[]";
+}
+
 function preload(){
     flagsFile = loadJSON('/ac1-collectibles/Damascus/json/flags.json');
     templarsFile = loadJSON('/ac1-collectibles/Damascus/json/templars.json');
@@ -8,6 +31,10 @@ function preload(){
 
 function setup() { 
     noCanvas();
+
+    var json_str = getCookie('activeMarkersDamascus');
+    var activeMarkers = JSON.parse(json_str);
+    console.log(activeMarkers);
 
     var bounds = [[0,0], [2303,4096]];
     
@@ -51,10 +78,37 @@ function setup() {
 
     for(let flag of flagsFile.flags){
         var marker = L.marker([flag.y, flag.x], {icon: InactiveFlagIcon});
+        for(let mark of activeMarkers){
+            if (flag.y == mark.lat && flag.x == mark.lng){
+                marker.setIcon(ActiveFlagIcon);
+                break;
+            }
+        }
         marker.bindTooltip(flag.note);
         marker.on('click', function(ev){
             var layer = ev.target;
-            layer.setIcon(layer.options.icon == InactiveFlagIcon ? ActiveFlagIcon : InactiveFlagIcon);
+            if(layer.options.icon == InactiveFlagIcon){
+                layer.setIcon(ActiveFlagIcon);
+                activeMarkers.push(layer.getLatLng());
+                console.log(activeMarkers);
+                setCookie('activeMarkersDamascus', JSON.stringify(activeMarkers), 30);
+            }else{
+                layer.setIcon(InactiveFlagIcon);
+                var index = activeMarkers.indexOf(layer.getLatLng());
+                var latlng = layer.getLatLng();
+                var index = -1;
+                for(var i = 0; i < activeMarkers.length; i++){
+                    if(activeMarkers[i].lat == latlng.lat && activeMarkers[i].lng == latlng.lng){
+                        index = i;
+                    }
+                }
+                console.log(index);
+                if (index !== -1){
+                    activeMarkers.splice(index, 1);
+                }
+                console.log(activeMarkers);
+                setCookie('activeMarkersDamascus', JSON.stringify(activeMarkers), 30);
+            }
         });
 
         marker.addTo(map);
@@ -62,10 +116,37 @@ function setup() {
     
     for(let templar of templarsFile.templars){
         var marker = L.marker([templar.y, templar.x], {icon: InactiveTemplarIcon});
+        for(let mark of activeMarkers){
+            if (templar.y == mark.lat && templar.x == mark.lng){
+                marker.setIcon(ActiveTemplarIcon);
+                break;
+            }
+        }
         marker.bindTooltip(templar.note);
         marker.on('click', function(ev){
             var layer = ev.target;
-            layer.setIcon(layer.options.icon == InactiveTemplarIcon ? ActiveTemplarIcon : InactiveTemplarIcon);
+            if(layer.options.icon == InactiveTemplarIcon){
+                layer.setIcon(ActiveTemplarIcon);
+                activeMarkers.push(layer.getLatLng());
+                console.log(activeMarkers);
+                setCookie('activeMarkersDamascus', JSON.stringify(activeMarkers), 30);
+            }else{
+                layer.setIcon(InactiveTemplarIcon);
+                var index = activeMarkers.indexOf(layer.getLatLng());
+                var latlng = layer.getLatLng();
+                var index = -1;
+                for(var i = 0; i < activeMarkers.length; i++){
+                    if(activeMarkers[i].lat == latlng.lat && activeMarkers[i].lng == latlng.lng){
+                        index = i;
+                    }
+                }
+                console.log(index);
+                if (index !== -1){
+                    activeMarkers.splice(index, 1);
+                }
+                console.log(activeMarkers);
+                setCookie('activeMarkersDamascus', JSON.stringify(activeMarkers), 30);
+            }
         });
 
         marker.addTo(map);

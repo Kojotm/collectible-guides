@@ -13,7 +13,7 @@
     font-size: 1.2em;
     font-family: 'Raleway', sans-serif;
     background-color: grey;
-    border-color: grey;
+    border:none;
     color: white;
     width: 200px;
     white-space: normal;
@@ -32,7 +32,7 @@
 /* Transfroms markers back to original when not hovered on. */
 .markerIcon{
     transition: transform .2s;
-    transform: scale(2/3);
+    transform: scale(1);
     transform-origin: bottom center;                
 }
 

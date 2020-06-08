@@ -49,28 +49,28 @@ function setup() {
     });
 
     var ActiveTemplarIcon = L.divIcon({
-        html: '<img src="img/Templar_Active.png" width=50 height=50 class="markerIcon"/>',
+        html: '<img src="img/Templar_Active.png" alt="Active templar cross." width=50 height=50 class="markerIcon"/>',
         iconAnchor:   [25, 25],
         tooltipAnchor:  [30, -8],
         className: ''
     });
 
     var InactiveTemplarIcon = L.divIcon({
-        html: '<img src="img/Templar_Inactive.png" width=50 height=50 class="markerIcon"/>',
+        html: '<img src="img/Templar_Inactive.png" alt="Inactive templar cross." width=50 height=50 class="markerIcon"/>',
         iconAnchor:   [25, 25],
         tooltipAnchor:  [30, -8],
         className: ''
     });
 
     var ActiveFlagIcon = L.divIcon({
-        html: '<img src="img/SaracenFlag_Active.png" width=45 height=75 class="markerIcon"/>',
+        html: '<img src="img/SaracenFlag_Active.png" alt="Active saracen flag." width=45 height=75 class="markerIcon"/>',
         iconAnchor:   [22, 75],
         tooltipAnchor:  [30, -60],
         className: ''
     });
 
     var InactiveFlagIcon = L.divIcon({
-        html: '<img src="img/SaracenFlag_Inactive.png" width=45 height=75 class="markerIcon"/>',
+        html: '<img src="img/SaracenFlag_Inactive.png" alt="Inactive saracen flag." width=45 height=75 class="markerIcon"/>',
         iconAnchor:   [22, 75],
         tooltipAnchor:  [30, -60],
         className: ''
